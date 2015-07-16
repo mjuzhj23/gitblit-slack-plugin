@@ -119,7 +119,7 @@ public class Slacker implements IManager {
 			hook = "incoming-webhook";
 		}
 
-		return String.format("https://%s.slack.com/services/hooks/%s?token=%s", team.toLowerCase(), hook, token);
+		return String.format(hook);
 	}
 
 	/**
